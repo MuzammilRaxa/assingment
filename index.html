@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <h1>TYPE PASSWORD</h1>
+        <input type="text" id="input">
+        <button onclick="check()"> CHECK </button>
+        <h1 id="result"></h1>
+    </div>
+
+
+
+    <script>
+        function check() {
+            var password = document.getElementById("input").value;
+            var correct = "asdf";
+            var ans1 = "Your are logged in";
+            var ans2 = "sorry type correct PASS";
+
+            if (password == correct) {
+                document.getElementById("result").innerText = ans1;
+            }
+            else {
+                document.getElementById("result").innerText = ans2;
+            }
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
